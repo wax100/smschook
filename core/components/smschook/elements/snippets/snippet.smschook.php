@@ -3,8 +3,10 @@ $data = [
     'login' => $modx->getOption('smschook_login', null, ''),
     'psw' => $modx->getOption('smschook_password', null, ''),
     'phones' => $modx->getOption('smschook_phones', null, ''),
-    'mes' => $modx->getOption('smschook_message', null, ''),
+    'mes' => $scriptProperties['smschook_message'],
 ];
+$formFields = $hook->getValues();
+
 if (empty($data['login']) || empty($data['login'])
     || empty($data['phones']) || empty($data['mes'])) {
     return true;

@@ -9,7 +9,7 @@ $tmp = array(
         'area' => 'default',
     ),
     'password'=> array(
-        'xtype' => 'password',
+        'xtype' => 'text-password',
         'value' => '',
         'area' => 'default',
     ),
