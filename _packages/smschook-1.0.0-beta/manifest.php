@@ -302,10 +302,11 @@ Author: Yana Vostryakova <wax100@gmail.com>
 
 Нужно добавить _smschook_ в _hooks_ вызова сниппета (перед mail). В системных настройках Formit указать ключи:
 
-*   Логин - _smsc.login_
-*   Пароль - _smsc.password_
-*   Телефоны - _smsc.phones_ в формате КОД СТРАНЫ + НОМЕР ТЕЛЕФОНА (без +), можно указать несколько через запятую
+*   Логин - _smschook_login_
+*   Пароль - _smschook_password_
+*   Телефоны - _smschook_phones_ в формате КОД СТРАНЫ + НОМЕР ТЕЛЕФОНА (без +), можно указать несколько через запятую
 *   smschook_message - параметр, в который нужно передать текст сообшения
+
 ### Пример вызова:
 
 ```
@@ -323,7 +324,8 @@ Author: Yana Vostryakova <wax100@gmail.com>
     \'successMessage\' => \'Сообщение успешно отправлено\',
     \'smschook_message\' => \'Новое сообщение на сайта [[++site_name]]\',
 ]}
-```',
+```
+',
     'chunks' => 
     array (
     ),
@@ -336,9 +338,9 @@ Author: Yana Vostryakova <wax100@gmail.com>
       'vehicle_package' => 'transport',
       'vehicle_class' => 'xPDOObjectVehicle',
       'class' => 'modNamespace',
-      'guid' => 'f5ed077231f09683d9f0800a70edf572',
+      'guid' => '5acf3245d9c1f00955514fcbe3681469',
       'native_key' => 'smschook',
-      'filename' => 'modNamespace/c28fba34b718fbe56bdd80fde70a9dbd.vehicle',
+      'filename' => 'modNamespace/011ad630d784f528757ccc9704910020.vehicle',
       'namespace' => 'smschook',
     ),
     1 => 
@@ -346,9 +348,9 @@ Author: Yana Vostryakova <wax100@gmail.com>
       'vehicle_package' => 'transport',
       'vehicle_class' => 'xPDOObjectVehicle',
       'class' => 'modSystemSetting',
-      'guid' => '978a17ae919f01ac1f9fcc9c09a1386f',
+      'guid' => '902e9727c90e5bf042899eda3a13c1a2',
       'native_key' => 'smschook_login',
-      'filename' => 'modSystemSetting/122ece5057d4967056aa015871df2d76.vehicle',
+      'filename' => 'modSystemSetting/3e6dc2de2c5c9371f4f36ba49c58abe0.vehicle',
       'namespace' => 'smschook',
     ),
     2 => 
@@ -356,9 +358,9 @@ Author: Yana Vostryakova <wax100@gmail.com>
       'vehicle_package' => 'transport',
       'vehicle_class' => 'xPDOObjectVehicle',
       'class' => 'modSystemSetting',
-      'guid' => 'd7995b92939196c95c9e2a0c7af458d2',
+      'guid' => 'd79a6851e6d2ca5559760417eb2d50b1',
       'native_key' => 'smschook_password',
-      'filename' => 'modSystemSetting/25e02830d45d908f1fb0888008c2123f.vehicle',
+      'filename' => 'modSystemSetting/953d61206c2227ced89138ef155d80fc.vehicle',
       'namespace' => 'smschook',
     ),
     3 => 
@@ -366,9 +368,9 @@ Author: Yana Vostryakova <wax100@gmail.com>
       'vehicle_package' => 'transport',
       'vehicle_class' => 'xPDOObjectVehicle',
       'class' => 'modSystemSetting',
-      'guid' => '5937480abf682a2d66f01f49cb8ecad2',
+      'guid' => '64bca256e334e94444f2889fdf9534d4',
       'native_key' => 'smschook_phones',
-      'filename' => 'modSystemSetting/803e31f73440c7353da096f368de24d9.vehicle',
+      'filename' => 'modSystemSetting/993435f1a65f1a2bf337af0c8bd7abc0.vehicle',
       'namespace' => 'smschook',
     ),
     4 => 
@@ -376,9 +378,9 @@ Author: Yana Vostryakova <wax100@gmail.com>
       'vehicle_package' => 'transport',
       'vehicle_class' => 'xPDOObjectVehicle',
       'class' => 'modCategory',
-      'guid' => '7fdc0807c44407807819797241e3ecb7',
+      'guid' => '3362def47b2008084a76623372a75e23',
       'native_key' => NULL,
-      'filename' => 'modCategory/3cddf5e30be20248028ca473cb5bef33.vehicle',
+      'filename' => 'modCategory/3d4ca1d642496ed0c65d3030b23f958f.vehicle',
       'namespace' => 'smschook',
     ),
   ),

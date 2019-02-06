@@ -9,7 +9,7 @@ Author: Yana Vostryakova <wax100@gmail.com>
 *   Логин - _smschook_login_
 *   Пароль - _smschook_password_
 *   Телефоны - _smschook_phones_ в формате КОД СТРАНЫ + НОМЕР ТЕЛЕФОНА (без +), можно указать несколько через запятую
-*   smschook_message - параметр, в который нужно передать текст сообшения
+*   smschook_message - параметр, в который нужно передать текст сообщения
 
 ### Пример вызова:
 
