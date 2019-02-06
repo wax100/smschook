@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => true,
+  'namespace' => 'smschook',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'd7995b92939196c95c9e2a0c7af458d2',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '25e02830d45d908f1fb0888008c2123f',
+  'native_key' => 'smschook_password',
+  'object' => '{"key":"smschook_password","value":"","xtype":"password","namespace":"smschook","area":"default","editedon":null}',
+);

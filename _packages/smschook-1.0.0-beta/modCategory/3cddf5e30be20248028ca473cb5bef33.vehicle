@@ -1,0 +1,71 @@
+<?php return array (
+  'unique_key' => 'category',
+  'preserve_keys' => false,
+  'update_object' => true,
+  'related_objects' => 
+  array (
+    'Snippets' => 
+    array (
+      '878732e5a276b8968481f947be4285c0' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modSnippet',
+        'object' => '{"id":0,"source":1,"property_preprocess":0,"name":"smschook","description":"SMSC.ru hook for FormIt","editor_type":0,"category":0,"cache_type":0,"snippet":"$data = [\\n    \'login\' => $modx->getOption(\'smschook_login\', null, \'\'),\\n    \'psw\' => $modx->getOption(\'smschook_password\', null, \'\'),\\n    \'phones\' => $modx->getOption(\'smschook_phones\', null, \'\'),\\n    \'mes\' => $modx->getOption(\'smschook_message\', null, \'\'),\\n];\\nif (empty($data[\'login\']) || empty($data[\'login\'])\\n    || empty($data[\'phones\']) || empty($data[\'mes\'])) {\\n    return true;\\n}\\n\\n$link = \'https:\\/\\/smsc.ru\\/sys\\/send.php?login=\' . $data[\'login\'] . \'&psw=\' . $data[\'psw\'] . \'&phones=\' . $data[\'phones\'] . \'&mes=\' . $data[\'mes\'] . \'&charset=utf-8\';\\n$ch = curl_init();\\ncurl_setopt($ch, CURLOPT_URL, $link);\\ncurl_setopt($ch, CURLOPT_RETURNTRANSFER, true);\\n$res = curl_exec($ch);\\nif (curl_getinfo($ch, CURLINFO_HTTP_CODE) == 200 && substr($res, 0, 2) == \'OK\') {\\n    curl_close($ch);\\n    return true;\\n}\\n$modx->log(modX::LOG_LEVEL_ERROR, \'[smscHook] Error sending SMS: \' . print_r(curl_getinfo($ch), true));\\ncurl_close($ch);\\nreturn true;","locked":0,"properties":"a:0:{}","moduleguid":"","static":0,"static_file":"core\\/components\\/smschook\\/elements\\/snippets\\/snippet.smschook.php","content":"$data = [\\n    \'login\' => $modx->getOption(\'smschook_login\', null, \'\'),\\n    \'psw\' => $modx->getOption(\'smschook_password\', null, \'\'),\\n    \'phones\' => $modx->getOption(\'smschook_phones\', null, \'\'),\\n    \'mes\' => $modx->getOption(\'smschook_message\', null, \'\'),\\n];\\nif (empty($data[\'login\']) || empty($data[\'login\'])\\n    || empty($data[\'phones\']) || empty($data[\'mes\'])) {\\n    return true;\\n}\\n\\n$link = \'https:\\/\\/smsc.ru\\/sys\\/send.php?login=\' . $data[\'login\'] . \'&psw=\' . $data[\'psw\'] . \'&phones=\' . $data[\'phones\'] . \'&mes=\' . $data[\'mes\'] . \'&charset=utf-8\';\\n$ch = curl_init();\\ncurl_setopt($ch, CURLOPT_URL, $link);\\ncurl_setopt($ch, CURLOPT_RETURNTRANSFER, true);\\n$res = curl_exec($ch);\\nif (curl_getinfo($ch, CURLINFO_HTTP_CODE) == 200 && substr($res, 0, 2) == \'OK\') {\\n    curl_close($ch);\\n    return true;\\n}\\n$modx->log(modX::LOG_LEVEL_ERROR, \'[smscHook] Error sending SMS: \' . print_r(curl_getinfo($ch), true));\\ncurl_close($ch);\\nreturn true;"}',
+        'guid' => '314af2f283ac0bf1962b93245e11d511',
+        'native_key' => 0,
+        'signature' => 'e4b7c41477921ff96eb2b3eec01f3bd4',
+      ),
+    ),
+  ),
+  'related_object_attributes' => 
+  array (
+    'Snippets' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+    'Chunks' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => false,
+      'unique_key' => 'name',
+    ),
+    'Plugins' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => false,
+      'unique_key' => 'name',
+    ),
+    'PluginEvents' => 
+    array (
+      'preserve_keys' => true,
+      'update_object' => false,
+      'unique_key' => 
+      array (
+        0 => 'pluginid',
+        1 => 'event',
+      ),
+    ),
+  ),
+  'namespace' => 'smschook',
+  'resolve' => 
+  array (
+    0 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"smschook-1.0.0-beta\\/modCategory\\/3cddf5e30be20248028ca473cb5bef33\\/0\\/","target":"return MODX_CORE_PATH . \'components\\/\';","name":"smschook"}',
+    ),
+  ),
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '7fdc0807c44407807819797241e3ecb7',
+  'package' => 'modx',
+  'class' => 'modCategory',
+  'signature' => '3cddf5e30be20248028ca473cb5bef33',
+  'native_key' => NULL,
+  'object' => '{"id":null,"parent":0,"category":"smschook","rank":0}',
+);

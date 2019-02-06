@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => true,
+  'namespace' => 'smschook',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '978a17ae919f01ac1f9fcc9c09a1386f',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '122ece5057d4967056aa015871df2d76',
+  'native_key' => 'smschook_login',
+  'object' => '{"key":"smschook_login","value":"","xtype":"textfield","namespace":"smschook","area":"default","editedon":null}',
+);
