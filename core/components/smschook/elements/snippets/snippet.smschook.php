@@ -5,7 +5,6 @@ $data = [
     'phones' => $modx->getOption('smschook_phones', null, ''),
     'mes' => $scriptProperties['smschook_message'],
 ];
-$formFields = $hook->getValues();
 
 if (empty($data['login']) || empty($data['login'])
     || empty($data['phones']) || empty($data['mes'])) {
